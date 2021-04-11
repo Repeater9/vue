@@ -29,6 +29,18 @@ const chartsRouter = {
       component: () => import('@/views/charts/mix-chart'),
       name: 'MixChart',
       meta: { title: 'Mix Chart', noCache: true }
+    },
+    {
+      path: 'share',
+      component: () => import('@/views/charts/share'),
+      name: 'ShareChart',
+      meta: { title: 'Share Chart', noCache: true }
+    },
+    {
+      path: 'bigscale',
+      component: () => import('@/views/charts/bigscale'),
+      name: 'BigScaleChart',
+      meta: { title: 'Big Scale Chart', noCache: true }
     }
   ]
 }
