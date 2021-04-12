@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import echarts from 'echarts'
+import * as echarts from 'echarts'
 import resize from './mixins/resize'
 
 export default {
@@ -85,17 +85,19 @@ export default {
           }
         ]
       }
+      var theChart = this.chart
       this.chart.on('updateAxisPointer', function(event) {
         var xAxisInfo = event.axesInfo[0]
         if (xAxisInfo) {
           var dimension = xAxisInfo.value + 1
-          this.chart.setOption({
+          theChart.setOption({
             series: {
               id: 'pie',
               label: {
                 formatter: '{b}: {@[' + dimension + ']} ({d}%)'
               },
               encode: {
+                itemName: 'product',
                 value: dimension,
                 tooltip: dimension
               }

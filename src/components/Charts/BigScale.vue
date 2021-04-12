@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import echarts from 'echarts'
+import * as echarts from 'echarts'
 import resize from './mixins/resize'
 
 export default {
@@ -106,7 +106,7 @@ export default {
     },
     generateData(count) {
       var baseValue = Math.random() * 1000
-      var time = +new Date(2021, 3, 15)
+      var time1 = +new Date(2021, 3, 15)
       var smallBaseValue
       function next(idx) {
         smallBaseValue = idx % 30 === 0 ? Math.random() * 700 : (smallBaseValue + Math.random() * 500 - 250)
@@ -116,9 +116,9 @@ export default {
       var categoryData = []
       var valueData = []
       for (var i = 0; i < count; i++) {
-        categoryData.push(echarts.format.formatTime('yyyy-MM-dd\nhh:mm:ss', time))
+        categoryData.push(echarts.format.formatTime('yyyy-MM-dd\nhh:mm:ss', time1))
         valueData.push(next(i).toFixed(2))
-        time += 1000
+        time1 += 1000
       }
       return {
         categoryData: categoryData,

@@ -41,6 +41,18 @@ const chartsRouter = {
       component: () => import('@/views/charts/bigscale'),
       name: 'BigScaleChart',
       meta: { title: 'Big Scale Chart', noCache: true }
+    },
+    {
+      path: 'stacked',
+      component: () => import('@/views/charts/stacked'),
+      name: 'StackedChart',
+      meta: { title: 'Stacked Chart', noCache: true }
+    },
+    {
+      path: 'scatter',
+      component: () => import('@/views/charts/scatter'),
+      name: 'ScatterChart',
+      meta: { title: 'Scatter Chart', noCache: true }
     }
   ]
 }
