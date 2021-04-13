@@ -117,20 +117,27 @@ export const constantRoutes = [
  */
 export const asyncRoutes = [
   {
-    path: '/pattern',
+    path: '/indexpattern',
     component: Layout,
-    redirect: 'pattern/index',
+    redirect: '/indexpattern/create',
+    alwaysShow: true,
     name: 'Pattern',
     meta: {
       title: 'Pattern',
-      roles: ['admin', 'editor']
+      icon: 'pattern'
     },
     children: [
       {
-        path: 'index',
-        component: () => import('@/views/pattern/index'),
-        name: 'Pattern',
-        meta: { title: 'Pattern', icon: 'data', noCache: true }
+        path: 'mypattern',
+        component: () => import('@/views/indexpattern/mypattern'),
+        name: 'MyPattern',
+        meta: { title: 'My Pattern', noCache: true }
+      },
+      {
+        path: 'create',
+        component: () => import('@/views/indexpattern/create'),
+        name: 'CreatePattern',
+        meta: { title: 'Create Pattern', noCache: true }
       }
     ]
   },
