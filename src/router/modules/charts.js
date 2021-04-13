@@ -3,54 +3,54 @@
 import Layout from '@/layout'
 
 const chartsRouter = {
-  path: '/charts',
+  path: '/visualize',
   component: Layout,
   redirect: 'noRedirect',
-  name: 'Charts',
+  name: 'Visualize',
   meta: {
-    title: 'Charts',
+    title: 'Visualize',
     icon: 'chart'
   },
   children: [
     {
       path: 'keyboard',
-      component: () => import('@/views/charts/keyboard'),
+      component: () => import('@/views/visualize/keyboard'),
       name: 'KeyboardChart',
       meta: { title: 'Keyboard Chart', noCache: true }
     },
     {
       path: 'line',
-      component: () => import('@/views/charts/line'),
+      component: () => import('@/views/visualize/line'),
       name: 'LineChart',
       meta: { title: 'Line Chart', noCache: true }
     },
     {
       path: 'mix-chart',
-      component: () => import('@/views/charts/mix-chart'),
+      component: () => import('@/views/visualize/mix-chart'),
       name: 'MixChart',
       meta: { title: 'Mix Chart', noCache: true }
     },
     {
       path: 'share',
-      component: () => import('@/views/charts/share'),
+      component: () => import('@/views/visualize/share'),
       name: 'ShareChart',
       meta: { title: 'Share Chart', noCache: true }
     },
     {
       path: 'bigscale',
-      component: () => import('@/views/charts/bigscale'),
+      component: () => import('@/views/visualize/bigscale'),
       name: 'BigScaleChart',
       meta: { title: 'Big Scale Chart', noCache: true }
     },
     {
       path: 'stacked',
-      component: () => import('@/views/charts/stacked'),
+      component: () => import('@/views/visualize/stacked'),
       name: 'StackedChart',
       meta: { title: 'Stacked Chart', noCache: true }
     },
     {
       path: 'scatter',
-      component: () => import('@/views/charts/scatter'),
+      component: () => import('@/views/visualize/scatter'),
       name: 'ScatterChart',
       meta: { title: 'Scatter Chart', noCache: true }
     }

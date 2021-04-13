@@ -16,13 +16,13 @@
     <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col">
       <div class="card-panel" @click="handleSetLineChartData('messages')">
         <div class="card-panel-icon-wrapper icon-message">
-          <svg-icon icon-class="message" class-name="card-panel-icon" />
+          <svg t="1618308016021" class="icon" viewBox="100 100  1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2037" width="56" height="56"><path d="M464 768h80v-80h-80v80z m38.656-703.92L61.312 928H944L502.656 64.08z m0 175.84L813.312 848H192l310.656-608.08zM464 416v96l14.656 128h48L544 512v-96h-80z" fill="#1296db" p-id="2038" /></svg>
         </div>
         <div class="card-panel-description">
           <div class="card-panel-text">
             Alert
           </div>
-          <count-to :start-val="0" :end-val="81" :duration="3000" class="card-panel-num" />
+          <count-to :start-val="0" :end-val="8100" :duration="3000" class="card-panel-num" />
         </div>
       </div>
     </el-col>
