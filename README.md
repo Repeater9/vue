@@ -2,7 +2,7 @@
 
 ```bash
 # clone the project
-git clone https://github.com/PanJiaChen/vue-element-admin.git
+git clone https://github.com/Repeater9/vue.git
 
 # enter the project directory
 cd vue-element-admin
@@ -41,9 +41,6 @@ npm run lint
 # code format check and auto fix
 npm run lint -- --fix
 ```
-
-Refer to [Documentation](https://panjiachen.github.io/vue-element-admin-site/guide/essentials/deploy.html) for more information
-
 
 ## Browsers support
 
