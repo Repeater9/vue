@@ -7,3 +7,4 @@ module.exports = function(plop) {
   plop.setGenerator('component', componentGenerator)
   plop.setGenerator('store', storeGenerator)
 }
+
