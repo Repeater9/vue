@@ -26,3 +26,4 @@ describe('Utils:validate', () => {
     expect(validAlphabets('123aBC')).toBe(false)
   })
 })
+

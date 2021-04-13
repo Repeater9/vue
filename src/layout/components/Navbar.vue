@@ -30,7 +30,7 @@
           <router-link to="/">
             <el-dropdown-item>Dashboard</el-dropdown-item>
           </router-link>
-          <a target="_blank" href="https://github.com/Repeater9/vue/">
+          <a target="_blank" href="https://github.com/Repeater9/industrial-data-view.git">
             <el-dropdown-item>Github</el-dropdown-item>
           </a>
           <!-- <a target="_blank" href="https://panjiachen.github.io/vue-element-admin-site/#/">

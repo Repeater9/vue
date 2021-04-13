@@ -2,10 +2,10 @@
 
 ```bash
 # clone the project
-git clone https://github.com/Repeater9/vue.git
+git clone https://github.com/Repeater9/industrial-data-view.git
 
 # enter the project directory
-cd vue-element-admin
+cd industrial-data-view
 
 # install dependency
 npm install

@@ -35,3 +35,4 @@ describe('Utils:parseTime', () => {
     expect(parseTime(null)).toBeNull()
   })
 })
+

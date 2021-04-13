@@ -192,7 +192,7 @@ export const asyncRoutes = [
     component: Layout,
     children: [
       {
-        path: 'https://github.com/Repeater9/vue/',
+        path: 'https://github.com/Repeater9/industrial-data-view.git',
         meta: { title: 'Our Repository', icon: 'link' }
       }
     ]
