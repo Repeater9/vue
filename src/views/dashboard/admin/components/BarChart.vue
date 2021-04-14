@@ -18,11 +18,11 @@ export default {
     },
     width: {
       type: String,
-      default: '100%'
+      default: '95%'
     },
     height: {
       type: String,
-      default: '300px'
+      default: '350px'
     }
   },
   data() {

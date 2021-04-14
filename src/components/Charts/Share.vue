@@ -53,11 +53,11 @@ export default {
         },
         dataset: {
           source: [
-            ['product', '2012', '2013', '2014', '2015', '2016', '2017'],
-            ['Milk Tea', 56.5, 82.1, 88.7, 70.1, 53.4, 85.1],
-            ['Matcha Latte', 51.1, 51.4, 55.1, 53.3, 73.8, 68.7],
-            ['Cheese Cocoa', 40.1, 62.2, 69.5, 36.4, 45.2, 32.5],
-            ['Walnut Brownie', 25.2, 37.1, 41.2, 18, 33.9, 49.1]
+            ['Blade', '2021-04-09', '2021-04-10', '2021-04-11', '2021-04-12', '2021-04-13', '2021-04-14'],
+            ['blade1', 56.5, 82.1, 88.7, 70.1, 53.4, 85.1],
+            ['blade2', 51.1, 51.4, 55.1, 53.3, 73.8, 68.7],
+            ['blade3', 40.1, 62.2, 69.5, 36.4, 45.2, 32.5],
+            ['blade4', 25.2, 37.1, 41.2, 18, 33.9, 49.1]
           ]
         },
         xAxis: { type: 'category' },
@@ -75,12 +75,12 @@ export default {
             center: ['50%', '25%'],
             emphasis: { focus: 'data' },
             label: {
-              formatter: '{b}: {@2012} ({d}%)'
+              formatter: '{b}: {@2021-04-09} ({d}%)'
             },
             encode: {
-              itemName: 'product',
-              value: '2012',
-              tooltip: '2012'
+              itemName: 'Blade',
+              value: '2021-04-09',
+              tooltip: '2021-04-09'
             }
           }
         ]
@@ -97,7 +97,7 @@ export default {
                 formatter: '{b}: {@[' + dimension + ']} ({d}%)'
               },
               encode: {
-                itemName: 'product',
+                itemName: 'Blade',
                 value: dimension,
                 tooltip: dimension
               }

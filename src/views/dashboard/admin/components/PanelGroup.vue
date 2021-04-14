@@ -9,7 +9,7 @@
           <div class="card-panel-text">
             New Visits
           </div>
-          <count-to :start-val="0" :end-val="102400" :duration="2600" class="card-panel-num" />
+          <count-to :start-val="0" :end-val="visitsVal" :duration="2600" class="card-panel-num" />
         </div>
       </div>
     </el-col>
@@ -22,7 +22,7 @@
           <div class="card-panel-text">
             Alert
           </div>
-          <count-to :start-val="0" :end-val="8100" :duration="3000" class="card-panel-num" />
+          <count-to :start-val="0" :end-val="alertVal" :duration="3000" class="card-panel-num" />
         </div>
       </div>
     </el-col>
@@ -35,7 +35,7 @@
           <div class="card-panel-text">
             Purchases
           </div>
-          <count-to :start-val="0" :end-val="9280" :duration="3200" class="card-panel-num" />
+          <count-to :start-val="0" :end-val="purchaseVal" :duration="3200" class="card-panel-num" />
         </div>
       </div>
     </el-col>
@@ -48,7 +48,7 @@
           <div class="card-panel-text">
             Shoppings
           </div>
-          <count-to :start-val="0" :end-val="13600" :duration="3600" class="card-panel-num" />
+          <count-to :start-val="0" :end-val="shoppingsVal" :duration="3600" class="card-panel-num" />
         </div>
       </div>
     </el-col>
@@ -61,6 +61,20 @@ import CountTo from 'vue-count-to'
 export default {
   components: {
     CountTo
+  },
+  data() {
+    return {
+      visitsVal: 0,
+      alertVal: 0,
+      purchaseVal: 0,
+      shoppingsVal: 0
+    }
+  },
+  mounted() {
+    this.visitsVal = Math.random() * 10000
+    this.alertVal = Math.random() * 8000
+    this.purchaseVal = Math.random() * 11000
+    this.shoppingsVal = Math.random() * 12000
   },
   methods: {
     handleSetLineChartData(type) {

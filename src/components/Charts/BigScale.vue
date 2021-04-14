@@ -30,7 +30,7 @@ export default {
     return {
       chart: null,
       option: {},
-      dataCount: 4096,
+      dataCount: 10000,
       chartData: 0
     }
   },

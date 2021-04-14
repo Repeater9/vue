@@ -137,7 +137,8 @@ export const asyncRoutes = [
         path: 'create',
         component: () => import('@/views/indexpattern/create'),
         name: 'CreatePattern',
-        meta: { title: 'Create Pattern', noCache: true }
+        meta: { title: 'Create Pattern', noCache: true },
+        hidden: true
       }
     ]
   },

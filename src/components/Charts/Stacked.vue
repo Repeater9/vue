@@ -61,7 +61,7 @@ export default {
           }
         },
         legend: {
-          data: ['邮件营销', '联盟广告', '视频广告', '直接访问', '搜索引擎']
+          data: ['Sensor1', 'Sensor2', 'Sensor3', 'Sensor4', 'Sensor5']
         },
         toolbox: {
           feature: {
@@ -78,7 +78,7 @@ export default {
           {
             type: 'category',
             boundaryGap: false,
-            data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+            data: ['2021-04-09', '2021-04-10', '2021-04-11', '2021-04-12', '2021-04-13', '2021-04-14', '2021-4-15']
           }
         ],
         yAxis: [
@@ -88,7 +88,7 @@ export default {
         ],
         series: [
           {
-            name: '邮件营销',
+            name: 'Sensor1',
             type: 'line',
             stack: '总量',
             areaStyle: {},
@@ -98,7 +98,7 @@ export default {
             data: [120, 132, 101, 134, 90, 230, 210]
           },
           {
-            name: '联盟广告',
+            name: 'Sensor2',
             type: 'line',
             stack: '总量',
             areaStyle: {},
@@ -108,7 +108,7 @@ export default {
             data: [220, 182, 191, 234, 290, 330, 310]
           },
           {
-            name: '视频广告',
+            name: 'Sensor3',
             type: 'line',
             stack: '总量',
             areaStyle: {},
@@ -118,7 +118,7 @@ export default {
             data: [150, 232, 201, 154, 190, 330, 410]
           },
           {
-            name: '直接访问',
+            name: 'Sensor4',
             type: 'line',
             stack: '总量',
             areaStyle: {},
@@ -128,7 +128,7 @@ export default {
             data: [320, 332, 301, 334, 390, 330, 320]
           },
           {
-            name: '搜索引擎',
+            name: 'Sensor5',
             type: 'line',
             stack: '总量',
             label: {
