@@ -16,13 +16,13 @@
     <el-divider class="divider" />
     <p class="pattern" @click="handleIndexClick">sample_data</p>
     <el-divider class="divider" />
-    <p class="pattern">data_flight</p>
+    <p class="pattern" @click="handleIndexClick">data_flight</p>
     <el-divider class="divider" />
-    <p class="pattern">data_blade</p>
+    <p class="pattern" @click="handleIndexClick">data_blade</p>
     <el-divider class="divider" />
-    <p class="pattern">data_sensor</p>
+    <p class="pattern" @click="handleIndexClick">data_sensor</p>
     <el-divider class="divider" />
-    <p class="pattern">data_shakespeare</p>
+    <p class="pattern" @click="handleIndexClick">data_shakespeare</p>
     <el-divider class="divider" />
   </div>
 </template>

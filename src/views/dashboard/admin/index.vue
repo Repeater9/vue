@@ -31,7 +31,7 @@
         <transaction-table />
       </el-col>
       <el-col :xs="{span: 24}" :sm="{span: 24}" :md="{span: 24}" :lg="{span: 12}" :xl="{span: 12}" style="margin-bottom:30px;">
-        <share-chart :width="width" :height="height" />
+        <scatter-chart :width="width" :height="height" />
       </el-col>
     </el-row>
   </div>
@@ -45,7 +45,7 @@ import RaddarChart from './components/RaddarChart'
 import PieChart from './components/PieChart'
 import BarChart from './components/BarChart'
 import TransactionTable from './components/TransactionTable'
-import ShareChart from '@/components/Charts/Share'
+import ScatterChart from '@/components/Charts/Scatter'
 
 const lineChartData = {
   newVisitis: {
@@ -76,7 +76,7 @@ export default {
     PieChart,
     BarChart,
     TransactionTable,
-    ShareChart
+    ScatterChart
   },
   data() {
     return {
